@@ -4,10 +4,11 @@
 /*
 Container
 */ 
-html, body, main {
-  width: 100%;
-  height: 100%;
+
+.container {
+  min-height: 100vh;   /* responsive */  
 }
+
 .name {
     font-family: 'Poppins',
     sans-serif;
@@ -21,6 +22,10 @@ html, body, main {
 /*
 Text Group
 */
+.container .text-group {
+  height: 250px;
+  width: 100%;
+}
 .container .text-group .text-group__title {
   position: absolute;
   top: 110px;
@@ -28,24 +33,22 @@ Text Group
   font-family: 'PT Serif', serif;
   font-weight: 700;
   font-size: 36px;
+  height: 100px;
 }
 .container .text-group .text-group__introduce {
+  position: absolute;
+  top: 110px;
+  left: 736px;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   line-height: 27px;
 }
 .container .text-group .text-group__introduce .text1 {
   font-weight: 600;
-  position: absolute;
-  top: 110px;
-  left: 736px;
-  /* margin-top: 10px;  margin collapse 발생 */
+  margin-bottom: 10px;
 }
 .container .text-group .text-group__introduce .text2 {
   font-weight: 400;
-  position: absolute;
-  top: 147px;
-  left: 736px;
 }
 
 
@@ -54,7 +57,7 @@ IMG
 */
 img {
   width: 238px;
-  height: 341px;
+  height: 347px;
   margin-bottom: 15px;
 }
 
@@ -65,6 +68,10 @@ Profile
 */
 .people {
   width: 300px;
+}
+.image-group {
+  width: 100%;
+  height: 1200px;
 }
 .image-group .people1 {
   position: absolute;
@@ -104,7 +111,7 @@ Profile
 .image-group .people3 .people3__position {
   position: absolute;
   top: 25px;
-  right: 0;
+  right: 10px;
   transform: rotate(90deg);
   font-size: 12px;
   font-family: 'PT Serif';
@@ -118,8 +125,8 @@ Profile
 }
 .image-group .people4 .people4__position {
   position: absolute;
-  top: 43px;
-  right: -10px;
+  top: 31px;
+  right: 5px;
   transform: rotate(90deg);
   font-size: 12px;
   font-family: 'PT Serif';
@@ -133,8 +140,8 @@ Profile
 }
 .image-group .people5 .people5__position {
   position: absolute;
-  top: 43px;
-  right: -10px;
+  top: 28px;
+  right: 10px;
   transform: rotate(90deg);
   font-size: 12px;
   font-family: 'PT Serif';
@@ -148,11 +155,96 @@ Profile
 }
 .image-group .people6 .people6__position {
   position: absolute;
-  top: 43px;
-  right: -10px;
+  top: 28px;
+  right: 10px;
   transform: rotate(90deg);
   font-size: 12px;
   font-family: 'PT Serif';
   font-weight: 400;
   line-height: 15.9px;
+}
+
+
+/*
+FOOTER
+*/
+a {
+  color: grey;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  color: grey;
+}
+
+
+
+/*
+Mobile Screen 
+*/  
+@media only screen and (max-width: 767px) {
+  .container .text-group .text-group__title {
+    top: 71px;
+    left: 12px;
+  }
+  .container .text-group .text-group__introduce {
+    top: 156px;
+    left: 12px;
+  }
+  .image-group .people:nth-child(2n+1) {
+    left: 19px;
+  }
+  .image-group .people:nth-child(2n) {
+    left: 201px;
+  }
+  .image-group .people1 {
+    top: 318px;
+  }
+  .image-group .people1 .people1__position {
+    top: 148px;
+    left: 0;
+  }
+  .image-group .people2 {
+    top: 366px;
+  }
+  .image-group .people2 .people2__position {
+    top: 140px;
+    left: 10px;
+  }
+  .image-group .people3 {
+    top: 619px;
+  }
+  .image-group .people3 .people3__position {
+    top: 128px;
+    left: 20px;
+  }
+  .image-group .people4 {
+    top: 667px;
+  }
+  .image-group .people4 .people4__position {
+    top: 135px;
+    left: 10px;
+  }
+  .image-group .people5 {
+    top: 930px;
+  }
+  .image-group .people5 .people5__position {
+    top: 130px;
+    left: 15px;
+  }
+  .image-group .people6 {
+    top: 979px;
+  }
+  .image-group .people6 .people6__position {
+    top: 132px;
+    left: 10px;
+  }
+  br {
+    display: none;
+  }
+  img {
+    width: 138px;
+    height: 209px;
+    margin-bottom: 15px;
+  }
 }
