@@ -4,9 +4,8 @@
 /*
 Container
 */ 
-
 .container {
-  min-height: 100vh;   /* responsive */  
+  min-height: 100vh;   /* responsive */
 }
 
 .name {
@@ -178,7 +177,6 @@ footer {
 }
 
 
-
 /*
 Mobile Screen 
 */  
@@ -246,5 +244,31 @@ Mobile Screen
     width: 138px;
     height: 209px;
     margin-bottom: 15px;
+  }
+}
+
+
+
+/*
+Large Screen (Desktop)
+*/
+@media only screen and (min-width: 1441px) {
+  .container .text-group .text-group__title {
+    top: 110px;
+    left: 243px;
+    font-size: 48px;
+  }
+  .container .text-group .text-group__introduce {
+    top: 133px;
+    left: 1036px;
+    font-size: 24px;
+  }
+  .image-group .people2, 
+  .image-group .people5 {
+    left: 720px;
+  }
+  .image-group .people3,
+  .image-group .people6 {
+    left: 1200px;
   }
 }
