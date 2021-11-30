@@ -8,7 +8,6 @@
 
 <div align="center">
   <h3>
-    <span> | </span>
     <a href="#">
       Solution
     </a>
@@ -28,7 +27,7 @@
 - CSS
 
 ## Acknowledgements
-- [How to disable hover effects for mobile devices using CSS](https://erikmartinjordan.com/remove-hover-effects-css-mobile)
+- [CSS:Do not put height:100% on html, body in 2020](https://greggod.medium.com/css-do-not-put-height-100-on-the-body-html-e36bda3551b3)
 - [Media Query](https://learn.shayhowe.com/advanced-html-css/responsive-web-design/)
 
 ## Contact
